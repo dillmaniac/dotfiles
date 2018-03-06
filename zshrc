@@ -20,11 +20,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-source "/home/ws/rt1330/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-source "/home/ws/rt1330/bin/multipass.zsh"
-PASSWORD_STORES[iai]="$HOME/.iai_password_store"
-PASSWORD_STORES[priv]="$HOME/.private_password_store"
+source "$ZSH/custom/themes/spaceship.zsh-theme"
 
 function homestead() {
-    ( cd ~/Homestead && vagrant $* )
+    ( cd ~/.homestead && vagrant $* )
 }
