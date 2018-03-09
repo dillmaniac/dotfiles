@@ -15,6 +15,16 @@ antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 antigen apply
 
+if [ ! -d ~/bin ]; then
+  mkdir -p ~/bin
+fi
+
+if [ ! -f ~/bin/iterm2_integration.zsh]; then
+  curl curl -L https://iterm2.com/shell_integration/zsh -o ~/bin/iterm2_integration.zsh
+fi
+
+source ~/bin/iterm2_integration.zsh
+
 export UPDATE_ZSH_DAYS=14
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
