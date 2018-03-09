@@ -3,4 +3,5 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )
   else
     echo "Homestead is missing please install!"
+  fi
 }
