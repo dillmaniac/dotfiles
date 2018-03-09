@@ -1,0 +1,6 @@
+function homestead() {
+  if [ -d ~/Homestead ]
+    ( cd ~/Homestead && vagrant $* )
+  else
+    echo "Homestead is missing please install!"
+}
