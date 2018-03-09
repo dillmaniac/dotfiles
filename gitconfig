@@ -16,3 +16,5 @@
 	hotfix = hotfix-
 	support = support-
 	versiontag = v
+[credential]
+        helper = cache --timeout=600
