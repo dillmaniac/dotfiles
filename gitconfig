@@ -1,6 +1,6 @@
 [user]
   name = Daniel Bacher
-  mail = danielbacher@phill93.de
+  email = danielbacher@phill93.de
   signingkey = 0DE57C23EDD1CE59
 [core]
   editor = vim
