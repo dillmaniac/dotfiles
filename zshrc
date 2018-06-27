@@ -12,7 +12,7 @@ gpg-agent
 EOBUNDLES
 
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
-
+antigen bundle https://github.com/chrisfleming/oh-my-zsh.git@gpg-agent plugins/gpg-agent
 antigen apply
 
 if [ ! -d ~/bin ]; then
