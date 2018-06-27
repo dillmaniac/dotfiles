@@ -30,14 +30,31 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_yaml_checkers = ["yamllint"]
 
+" airline
+let g:airline_theme = 'dark'
+let g:airline_powerline_fonts = 1
+set noshowmode
+set fillchars+=stl:\ ,stlnc:\
+
 " zeilen nummerieren
 set number
 
 " syntax highlighting
 syntax on
 
-" airline
-let g:airline_theme = 'dark'
-let g:airline_powerline_fonts = 1
-set noshowmode
-set fillchars+=stl:\ ,stlnc:\
+" better command-line completion
+set wildmenu
+
+" search options
+set hlsearch " highlightning
+set ignorecase
+set smartcase
+
+" ask me
+set confirm
+
+" use visualbell
+set visualbell
+
+" use mouse
+set mouse=a
