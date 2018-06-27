@@ -33,3 +33,4 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 source ~/.functions
+source ~/.aliases
