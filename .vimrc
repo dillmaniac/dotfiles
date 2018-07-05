@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'buc0/my-vim-colors'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-sleuth'
 
 " end vundle phase
 call vundle#end()
