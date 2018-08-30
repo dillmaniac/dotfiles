@@ -1,1 +1,3 @@
 alias nano=vim
+alias cat=bat
+alias ping=prettyping
