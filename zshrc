@@ -34,4 +34,13 @@ HIST_STAMPS="dd.mm.yyyy"
 
 source ~/.functions
 source ~/.aliases
+
+if [ ! -d ~/.sdk ]; then
+	mkdir -p ~/.sdk
+fi
+
+if [ ! -f ~/.sdk/export ]; then
+	touch ~/.sdk/export
+fi
+
 source ~/.sdk/export
