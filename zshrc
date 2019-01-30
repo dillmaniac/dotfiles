@@ -12,7 +12,6 @@ gpg-agent
 EOBUNDLES
 
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
-antigen bundle https://github.com/chrisfleming/oh-my-zsh.git@gpg-agent plugins/gpg-agent
 antigen apply
 
 if [ ! -d ~/bin ]; then
@@ -31,7 +30,6 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
 
-
 source ~/.functions
 source ~/.aliases
 
@@ -43,4 +41,5 @@ if [ ! -f ~/.sdk/export ]; then
 	touch ~/.sdk/export
 fi
 
-source ~/.sdk/export
+# added by travis gem
+[ -f /Users/rt1330/.travis/travis.sh ] && source /Users/rt1330/.travis/travis.sh
