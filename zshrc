@@ -2,14 +2,13 @@ source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle <<EOBUNDLES
-git
-sudo
-vim
-pass
-git-extras
-gpg-agent
-EOBUNDLES
+antigen bundle git
+antigen bundle sudo
+antigen bundle vim
+antigen bundle pass
+antigen bundle git-extras
+antigen bundle gpg-agent
+antigen bundle kubectl
 
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
@@ -17,6 +16,8 @@ antigen apply
 if [ ! -d ~/bin ]; then
   mkdir -p ~/bin
 fi
+
+export PATH="$PATH:$HOME/bin"
 
 if [ ! -f ~/bin/iterm2_integration.zsh ]; then
   curl -L https://iterm2.com/shell_integration/zsh -o ~/bin/iterm2_integration.zsh
@@ -43,3 +44,4 @@ fi
 
 # added by travis gem
 [ -f /Users/rt1330/.travis/travis.sh ] && source /Users/rt1330/.travis/travis.sh
+source ~/.common_env
