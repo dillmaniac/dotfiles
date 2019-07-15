@@ -42,6 +42,5 @@ if [ ! -f ~/.sdk/export ]; then
 	touch ~/.sdk/export
 fi
 
-# added by travis gem
-[ -f /Users/rt1330/.travis/travis.sh ] && source /Users/rt1330/.travis/travis.sh
+
 source ~/.common_env

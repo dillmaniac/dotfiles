@@ -1,7 +1,6 @@
 [user]
-  name = Daniel Bacher
-  email = danielbacher@phill93.de
-  signingkey = 0DE57C23EDD1CE59
+  name = Jan Dillmann
+  email = jan.dillmann@kit.edu
 [core]
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
