@@ -9,6 +9,8 @@ antigen bundle pass
 antigen bundle git-extras
 antigen bundle gpg-agent
 antigen bundle kubectl
+antigen bundle vagrant
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 antigen apply
@@ -31,16 +33,4 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
 
-source ~/.functions
 source ~/.aliases
-
-if [ ! -d ~/.sdk ]; then
-	mkdir -p ~/.sdk
-fi
-
-if [ ! -f ~/.sdk/export ]; then
-	touch ~/.sdk/export
-fi
-
-
-source ~/.common_env
