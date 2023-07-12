@@ -1,3 +1,5 @@
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
 source /opt/homebrew/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
